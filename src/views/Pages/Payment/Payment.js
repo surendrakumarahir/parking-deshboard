@@ -24,7 +24,7 @@ class Payment extends Component {
    //   redirect: 'follow'
     };
   
-      fetch(`http://localhost:3000/api/vehicleparking/${this.props.match.params.id}`, requestOptions)
+      fetch(`http://52.14.116.38:3000/api/vehicleparking/${this.props.match.params.id}`, requestOptions)
         .then(response => response.json())
         .then(result => {
             this.setState({data: result.data, paymentStatus: result.data.paymentStatus})
